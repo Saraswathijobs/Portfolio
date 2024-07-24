@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Js Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="js-project">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.png" alt="ardio" class="ardio-image" />
+      </div>
+      <div class="menu">
+        <ul class="nav-links">
+          <li><a href="#">About Studio</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+      </div>
+      <!-- login form -->
+
+      <div class="container">
+        <button id="signin-btn" onclick="toggleSignInPopup()">SignIn</button>
+    </div>
+
+    <div id="signin-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="toggleSignInPopup()">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signin-form" onsubmit="return false;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="custom-input" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="custom-password" required>
+                <button type="submit" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+    </div>
+      <div class="logo2">
+        <img
+          src="./images/Group 39867.png"
+          alt="rectangle"
+          class="rectangle-image"
+        />
+      </div>
+    </nav>
+    <section class="home-website">
+      <!-- Driver section -->
+      <div class="driver-container">
+        <div class="driver-content">
+          <button id="content-button">New</button>
+          <h1 id="content-head">
+            Driver Revenue <br />
+            Digital Marketing <br />
+            Agency That
+          </h1>
+          <div class="office-container">
+            <div class="our-office">
+              <h3>Our office</h3>
+              <p>Agency - Berlin, Germany</p>
+            </div>
+            <hr />
+            <div class="our-property">
+              <h3>Latest Project</h3>
+              <p>Design Product for Verde</p>
+            </div>
+          </div>
+          <button class="content-button2">Scroll down</button>
+        </div>
+        <div class="square-img-container">
+          <img
+            src="./images/Group 1321314344.png"
+            alt="squareimage"
+            id="square-image"
+          />
+        </div>
+        <div class="driver-img-container">
+          <img
+            src="./images/Rectangle 18210.png"
+            alt="driverimage"
+            id="driver-image"
+          />
+          <img
+            src="./images/Ellipse 736.png"
+            alt="Ellipseimage"
+            id="ellipse-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our experience section -->
+
+    <div class="experience-container">
+      <div class="experience-content">
+        <div class="our-exp1">
+          <h1>Our Experience</h1>
+        </div>
+        <div class="our-exp2">
+          <h2>Web design</h2>
+          <p class="par">
+            Web design refers to the design of websites<br />
+            that are displayed on the internet
+          </p>
+        </div>
+      </div>
+      <div class="description-content">
+        <div class="description">
+          <h5>Discription</h5>
+          <p class="para">
+            Web design in nothing more than creating the apperrance of website.
+            The <br />
+            process involves layout, design and commissionaing of your webste.
+          </p>
+        </div>
+        <hr id="hr1" />
+        <div class="work">
+          <h5>Work</h5>
+          <p>Our Portfolio of completed works</p>
+        </div>
+        <hr id="hr1" />
+        <div class="check">
+          <button id="bt"><h2>Check Profolio</h2> <img src="Assets/arrow.png" alt=""></button>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- card section -->
+
+    <div class="card-container">
+      <div class="card-content">
+        <h1>3.5k</h1>
+        <p>Job done successfully</p>
+      </div>
+      <div class="card-content">
+        <h1>2.8k+</h1>
+        <p>World wide clients</p>
+    </div>
+    <div class="card-content">
+        <h1>12+</h1>
+        <p>Years experience</p>
+    </div>
+    <div class="card-content">
+        <h1>30+</h1>
+        <p>Trusted company</p>
+    </div>
+
+    </div>
+
+
+    <!-- Our process section -->
+
+    <div class="process-container">
+      <div class="rectangle-img-container " onclick="displayCard()" >
+        <img src="./images/Rectangle 18224.png" alt="laptopimage" id="big-image">
+        <div class="overlay" id="overlay">
+          Our Process <br>How we are work on this part.<br> This is our work prccess.
+        </div>
+        <div class="ellipse-cont">
+          <img src="./images/Ellipse 738.png" alt="ellipseimage1" id="small-image1">
+          <img src="./images/Ellipse 739.png" alt="ellipseimage2" id="small-image2">
+        </div>
+      </div>
+
+      <div class="our-process-container">
+        <div class="process-content">
+          <h1>Our Proccess</h1>
+          <p>How we are work on this part. This is our work prccess.</p>
+        </div>
+        <div class="process1">
+          <div class="high">
+              <h2>High velocity</h2>
+              <p>Hypervelocity is very high velocity,<br>
+                   approximately over 3,000 meters.</p>
+          </div>
+          <div class="high">
+              <h2>Evicient</h2>
+              <p>exceptional. adjective. extremely good <br>
+                  or impressive in a way that is unusual.</p>
+          </div>
+      </div>
+      <div class="process1">
+          <div class="high">
+            <h2>High quality</h2>
+            <p>Hyper velocity is very high velocity,
+              <br> approximately over 3,000 meters.</p>
+          </div>
+          <div class="high">
+              <h2>Ego-Free</h2>
+              <p>Take your ego out of the equation 
+                  <br>and watch your company thrive!</p>
+          </div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <!-- Design Section -->
+<div class="design-container">
+
+      <div class="mini-content">
+        <div class="mini-head">
+          <h1>Minimalist
+            and Design</h1>
+        </div>
+        <div class="mini-nav">
+          <div class="mini-item">
+              <a href="#">All</a>
+              <a href="#">Mobile design</a>
+              <a href="#">Web design</a>
+              <a href="#">Motion design</a>
+              <a href="">Illustration design</a>
+              <hr id="hr6">
+          </div>
+          
+      </div>
+
+      </div>
+
+      <div class="card">
+        <div class="cards">
+          <div class="card1">
+            <img src="./images/Rectangle 18223 (2).png" id="ca-img" alt="">
+            <h3>Mobile design</h3>
+            <div class="img">
+                <img src="./images/Ellipse 738 (1).png"id="icon">
+                <p>By Prodint jok</p>
+            </div>
+            <button class="btn10"><h2>Full Details</h2></button>
+        </div>
+
+        <div class="card1">
+          <img src="./images/Rectangle 18223.png" id="ca-img" alt="">
+          <h3>Mobile design</h3>
+          <div class="img">
+              <img src="./images/Ellipse 738 (1).png"id="icon">
+              <p>By Prodint jok</p>
+          </div>
+          <button class="btn10"><h2>Full Details</h2></button>
+      </div>
+
+      <div class="card1">
+        <img src="./images/Rectangle 18223 (1).png" id="ca-img" alt="">
+        <h3>Mobile design</h3>
+        <div class="img">
+            <img src="./images/Ellipse 738 (1).png"id="icon">
+            <p>By Prodint jok</p>
+        </div>
+        <button class="btn10"><h2>Full Details</h2></button>
+    </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GST Calculator -->
+
+  <div class="bill" id="services">
+    <h1>Order Details</h1>
+
+    <div class="field">
+        <h1>Name</h1>
+        <input type="text" id="name" placeholder="Enter name" />
+    </div>
+
+    <div class="field">
+        <h1>Phone</h1>
+        <input type="tel" id="mobile" placeholder="Enter phone No" />
+    </div>
+
+    <div class="field">
+        <h1>Email</h1>
+        <input type="email" id="email" placeholder="Enter email" />
+    </div>
+
+    <div class="field">
+        <h1>Address</h1>
+        <input type="text" id="address" placeholder="Enter address" />
+    </div>
+
+    <h1>Electronic Devices</h1>
+
+    <div class="field">
+        <h1>Laptop</h1>
+        <input type="text" id="laptop" placeholder="Enter the Amount" />
+    </div>
+
+    <div class="field">
+        <h1>Smartphone</h1>
+        <input type="text" id="smartphone" placeholder="Enter the Amount" />
+    </div>
+
+    <div class="field">
+        <h1>Tablet</h1>
+        <input type="text" id="tablet" placeholder="Enter the Amount" />
+    </div>
+
+    <div class="field">
+        <h1>Camera</h1>
+        <input type="text" id="camera" placeholder="Enter the Amount" />
+    </div>
+
+    <div class="field">
+        <h1>Headphones</h1>
+        <input type="text" id="headphones" placeholder="Enter the Amount" />
+    </div>
+
+    <div class="field">
+        <h1>GST(%)</h1>
+        <input type="text" id="GST" placeholder="Enter the GST(%)" />
+    </div>
+
+    <button id="payment" onclick="calculate()">
+        <h2>Payment</h2>
+    </button>
+
+    <h1 id="answer"></h1>
+
+    <h1 id="final"></h1>
+</div>
+
+<!-- footer section -->
+
+<div class="footer">
+  <div class="footer1">
+  <div class="Ardio">
+      <img src="./images/logo.png" id="logo2" alt="">
+  <h1> Subscrive to get the <br>latest updates</h1>
+  </div>
+      <div class="ard">
+          <img src="./images/Vector 2517.png" alt="" id="vector1">
+          <img src="./images/Vector 2517.png" alt="" id="vector1">
+      </div>
+      
+  </div>
+  <div class="form">
+  <form action="">
+      <div class="email">
+      <input type="text" placeholder="Email address">
+      <input type="submit" placeholder="">
+      <img src="./images/Group 39772.png" id="arrow" alt="">   
+      <!-- <button>Subscribe</button>
+  -->
+      <img src="./images/Group 39802.png" id="group" alt="">
+      <button id="btn3">scroll down </button>   
+  </div>
+  </form>
+</div>
+</div>
+
+
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script src="./app.js"></script>
+</body>
+</html>

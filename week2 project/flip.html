@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- <style>
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  display: none;
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card.active {
+  display: block;
+}
+</style> --> -->
+</head>
+<body>
+  <div class="conatin">
+    <button class=".btn" onclick="displayColor()">submit</button>
+  </div>
+<!-- 
+<div class="card-container">
+  <div class="card active">
+    <h2>Card 1</h2>
+    <p>This is the content of Card 1.</p>
+  </div>
+  <div class="card">
+    <h2>Card 2</h2>
+    <p>This is the content of Card 2.</p>
+  </div>
+  <!-- Add more cards here if needed -->
+</div>
+
+<!-- <script src="script.js"></script> -->
+
+<--
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    let currentCardIndex = 0; -->
+  
+    // Show the initial card
+    cards[currentCardIndex].classList.add('active');
+  
+    // Function to move to the next card
+    function goToNextCard() {
+      // Hide the current card
+      cards[currentCardIndex].classList.remove('active');
+      // Move to the next card (if available)
+      currentCardIndex++;
+      if (currentCardIndex >= cards.length) {
+        currentCardIndex = 0; // Loop back to the first card
+      }
+      // Show the next card
+      cards[currentCardIndex].classList.add('active');
+    }
+  
+    // Add event listener to each card to go to the next card when clicked
+    cards.forEach(card => {
+      card.addEventListener('click', goToNextCard);
+    });
+  <!-- });
+</script> --> -->
+
+
+<script src="./funality.js"></script>
+</body>
+</html>
+  
